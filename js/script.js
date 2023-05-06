@@ -48,3 +48,14 @@ window.onscroll = () => {
     footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
 }
 
+// //contact data retrieval
+const scriptURL = 'https://script.google.com/macros/s/AKfycbz0rLdr9dUMtEle1iaJqfo7iAXGH0A5jc6kYlGW1Cv2L7DGPFhH1cBUOf997XlwltM7/exec'
+const form = document.forms['google-sheet']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => alert("I shall sell your data now! huhahahaha"))
+    .catch(error => console.error('Error!', error.message))
+})
+

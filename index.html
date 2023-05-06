@@ -220,14 +220,14 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span><span class="animate scroll" style="--i:1;"></span></h2>
 
-        <form action="#">
+        <form method="post" autocomplete="off" name="google-sheet">
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" name="Name" placeholder="Full Name " required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Address" required>
+                    <input type="text" name="email" placeholder="Email Address" required>
                     <span class="focus"></span>
                 </div>
                 <span class="animate scroll" style="--i:3;"></span>
@@ -235,11 +235,11 @@
 
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Mobile number" required>
+                    <input type="number" name="Mobile" placeholder="Mobile" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
+                    <input type="text" name="Subject" placeholder="Subject" required>
                     <span class="focus"></span>
                 </div>
 
@@ -247,7 +247,7 @@
             </div>
 
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <textarea cols="30" rows="10" name="Message" placeholder="Your Message" required></textarea>
                 <span class="focus"></span>
                 <span class="animate scroll" style="--i:7;"></span>
             </div>
@@ -272,9 +272,6 @@
         </div>
     </footer>
 
-
-
     <script src="js/script.js"></script>
-    
 </body>
 </html>
